@@ -1,0 +1,41 @@
+.counter {
+  font-family: $acrom;
+  font-size: rem(10);
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: rem(5);
+    height: rem(5);
+    background-color: $black;
+    top: rem(5);
+    left: rem(-10);
+  }
+
+}
+
+@media (min-width: 480px) {
+  .counter {
+    font-size: rem(12);
+
+    &:before {
+      top: rem(6);
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .counter {
+    font-size: rem(12);
+
+    &:before {
+      width: rem(10);
+      height: rem(10);
+      top: rem(3);
+      left: rem(-15);
+    }
+  }
+}

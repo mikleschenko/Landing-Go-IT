@@ -1,0 +1,15 @@
+.black {
+  color: $white;
+  background-color: $black;
+  font-family: $acrom;
+  font-weight: 600;
+  font-size: rem(10);
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  .black {
+    font-size: rem(12);
+  }
+}
+

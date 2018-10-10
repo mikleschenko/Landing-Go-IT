@@ -1,0 +1,22 @@
+.text {
+  font-family: $acrom;
+  font-size: rem(10);
+  color: $black;
+
+  &--black {
+    font-weight: 700;
+  }
+
+  &--orange {
+    color: $orange;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+@media (min-width: 480px) {
+  .text {
+    font-size: rem(12);
+  }
+}
